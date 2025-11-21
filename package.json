@@ -1,0 +1,24 @@
+{
+  "name": "web-grundlagen",
+  "version": "1.0.0",
+  "author": "Michael Brueggemann, Moritz Hipper",
+  "description": "Exercises and solutions for Html, CSS and JavaScript",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "parcel": "parcel",
+    "clean": "rimraf .parcel-cache/ dist/",
+    "example": "parcel ./javascript/example/index.html",
+    "js01solution": "parcel ./javascript/01-helloWorld/solution/index.html",
+    "js02solution": "parcel ./javascript/02-Taschenrechner/solution/index.html",
+    "js03solution": "parcel ./javascript/03-Taschenrechner-class/solution/index.html",
+    "js04solution": "parcel ./javascript/04-weather/solution/index.html",
+    "js05solution": "parcel ./javascript/05-wikipedia/solution/index.html",
+    "js17solution": "parcel ./javascript/exercise-17-js/uebersicht.html",
+    "updateTableOfContent": "doctoc ./"
+  },
+  "devDependencies": {
+    "doctoc": "^2.2.1",
+    "parcel": "^2.13.2",
+    "rimraf": "^6.0.1"
+  }
+}

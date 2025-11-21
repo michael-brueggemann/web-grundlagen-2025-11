@@ -1,0 +1,64 @@
+# general ignores (always valid)
+.vscode/.history/
+.parcel-cache/
+dist/
+node_modules/
+~*.pptx
+**/.DS_Store
+
+# don't commit if public hosted, it's different if running in AZ network or outside
+package-lock.json
+
+# ignores if published (don't commit these files/folders if public hosted)
+speaker/
+slides/*.pptx
+.npmrc
+
+##### enable these entries if you don't want to commit the solutions #####
+
+# hide slides:
+Web-Grundlagen 1.pdf
+Web-Grundlagen 2.pdf
+Web-Grundlagen 3.pdf
+Web-Grundlagen 4.pdf
+JavaScript.pdf
+
+# ignore all solutions, remove these entries if you want to commit the solutions
+# html-css/exercise-*
+# javascript/*/solution*
+# javascript/exercise-17-js/
+
+# hide html-css solutions:
+html-css/exercise-03/
+html-css/exercise-04/
+html-css/exercise-05/
+html-css/exercise-06/
+html-css/exercise-07/
+html-css/exercise-08/
+html-css/exercise-09/
+html-css/exercise-10/
+html-css/exercise-11/
+html-css/exercise-12/
+html-css/exercise-13/
+html-css/exercise-14/
+html-css/exercise-15/
+html-css/exercise-16/
+html-css/exercise-17/
+html-css/exercise-18/
+html-css/exercise-19/
+html-css/exercise-20/
+html-css/exercise-21/
+html-css/exercise-22/
+html-css/exercise-23/
+
+# hide javascript solutions:
+javascript/01*/solution/
+javascript/02*/solution/
+javascript/03*/solution/
+javascript/04*/solution/
+javascript/05*/solution/
+javascript/05*/solution-1/
+javascript/05*/solution-2/
+javascript/05*/solution-3/
+javascript/05*/solution-4/
+javascript/exercise-17-js/

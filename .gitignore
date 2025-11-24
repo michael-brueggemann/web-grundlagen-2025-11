@@ -27,9 +27,10 @@ JavaScript.pdf
 # html-css/exercise-*
 # javascript/*/solution*
 # javascript/exercise-17-js/
+_work/
 
 # hide html-css solutions:
-html-css/exercise-03/
+# html-css/exercise-03/
 html-css/exercise-04/
 html-css/exercise-05/
 html-css/exercise-06/

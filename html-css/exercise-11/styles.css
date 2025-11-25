@@ -1,0 +1,39 @@
+.box_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  background-color: lightblue;
+}
+
+.pizzavorschau {
+  height: 200px;
+  width: 200px;
+  background-color: lightgray;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.pizzavorschau.special {
+  border: 5px solid green;
+  box-sizing: border-box;
+}
+
+.pizzavorschau:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pizzavorschau:first-child {
+  background-color: gold;
+}
+
+.pizzavorschau:nth-child(2) {
+  background-color: orange;
+}
+
+img {
+  width: 200px;
+  height: 160px;
+}

@@ -19,7 +19,7 @@ slides/*.pptx
 # hide slides:
 # Web-Grundlagen 1.pdf
 # Web-Grundlagen 2.pdf
-Web-Grundlagen 3.pdf
+# Web-Grundlagen 3.pdf
 Web-Grundlagen 4.pdf
 JavaScript.pdf
 
@@ -36,7 +36,7 @@ _work*
 # html-css/exercise-06/
 # html-css/exercise-07/
 # html-css/exercise-08/
-html-css/exercise-09/
+# html-css/exercise-09/
 html-css/exercise-10/
 html-css/exercise-11/
 html-css/exercise-12/

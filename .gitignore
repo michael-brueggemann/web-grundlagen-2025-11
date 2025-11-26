@@ -21,7 +21,7 @@ slides/*.pptx
 # Web-Grundlagen 2.pdf
 # Web-Grundlagen 3.pdf
 # Web-Grundlagen 4.pdf
-JavaScript.pdf
+# JavaScript.pdf
 
 # ignore all solutions, remove these entries if you want to commit the solutions
 # html-css/exercise-*

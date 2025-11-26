@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benutzer Formular</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* Der Fenster-Rahmen */
+      .window {
+        width: 600px;
+        background-color: #fff;
+        border: 2px solid #333;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Die Titel-Leiste oben */
+      .title-bar {
+        background-color: #fff;
+        border-bottom: 2px solid #333;
+        padding: 5px 10px;
+        text-align: right;
+        font-weight: bold;
+        font-family: monospace;
+        background: #eee;
+      }
+
+      .content-area {
+        display: flex;
+        height: 500px; /* Feste Höhe für Demo */
+      }
+
+      /* Die linke Seitenleiste */
+      .sidebar {
+        width: 60px;
+        border-right: 2px solid #ccc;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: #f9f9f9;
+      }
+
+      .sidebar-icon {
+        width: 30px;
+        height: 30px;
+        border: 2px solid #999;
+        border-radius: 4px;
+      }
+
+      /* Das Hauptformular */
+      .main-form {
+        flex: 1;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        overflow-y: auto;
+      }
+
+      /* Oberer Bereich mit Bild und Namen */
+      .profile-header {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 10px;
+      }
+
+      .avatar-placeholder {
+        width: 100px;
+        height: 120px;
+        border: 2px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ccc;
+        font-size: 40px;
+      }
+
+      .personal-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        flex: 1;
+      }
+
+      /* Formular-Zeilen Styling */
+      .form-row {
+        display: flex;
+        align-items: center;
+      }
+
+      .form-row label {
+        width: 120px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      .form-row input,
+      .form-row textarea {
+        padding: 8px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .form-row input {
+        flex: 1;
+      }
+
+      .form-row textarea {
+        width: 100%;
+        height: 80px;
+        resize: none;
+      }
+
+      /* Spezielle Anpassung für das "Alter" Feld (kleiner) */
+      .input-short {
+        max-width: 60px;
+      }
+
+      /* Layout für die Textarea (Label oben oder links) */
+      .form-column {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .form-column label {
+        width: auto;
+      }
+
+      /* Buttons unten */
+      .button-group {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center; /* Zentriert wie in der Skizze */
+        gap: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+        border: 2px solid #555;
+        background: #fff;
+        font-weight: bold;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background-color: #eee;
+      }
+
+      /* Pfeile simulieren (nur Text für dieses Beispiel) */
+      .hints {
+        text-align: center;
+        font-size: 0.8em;
+        color: #777;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="window">
+      <div class="title-bar">- [] X</div>
+
+      <div class="content-area">
+        <aside class="sidebar">
+          <div class="sidebar-icon"></div>
+          <div class="sidebar-icon"></div>
+          <div class="sidebar-icon"></div>
+          <div class="sidebar-icon"></div>
+          <div class="sidebar-icon"></div>
+        </aside>
+
+        <form class="main-form">
+          <div class="profile-header">
+            <div class="avatar-placeholder">👤</div>
+            <div class="personal-info">
+              <div class="form-row">
+                <label>Name</label>
+                <input type="text" placeholder="" />
+              </div>
+              <div class="form-row">
+                <label>Nachname</label>
+                <input type="text" placeholder="" />
+              </div>
+              <div class="form-row">
+                <label>Alter</label>
+                <input type="number" class="input-short" placeholder="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>Lieblingspizza</label>
+            <input type="text" placeholder="z.B. Salami" />
+          </div>
+
+          <div class="form-column">
+            <label>Spezielle Wünsche</label>
+            <textarea placeholder="Keine Zwiebeln..."></textarea>
+          </div>
+
+          <div class="form-row" style="margin-top: auto">
+            <label>E-mail</label>
+            <input type="email" placeholder="name@beispiel.de" />
+          </div>
+
+          <div>
+            <div class="button-group">
+              <button type="reset">Zurücksetzen</button>
+              <button type="submit">Speichern</button>
+            </div>
+            <div class="hints">
+              <span>↑</span>
+              <span>↑</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

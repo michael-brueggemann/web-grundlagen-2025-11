@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form class="profilerstellen">
+        <div class="profilerstellen__row--top">
+          <img
+            class="profilerstellen__profilbild"
+            src="Assets/profilbild.png"
+          />
+          <div class="profilerstellen__inputs--top">
+            <div class="profilerstellen__row--right">
+              <label>Name </label>
+              <input type="text" name="name" />
+            </div>
+
+            <div class="profilerstellen__row--right">
+              <label>Nachname </label>
+              <input type="text" name="nachname" />
+            </div>
+
+            <div class="profilerstellen__row--right">
+              <label>Alter </label>
+              <input type="number" name="alter" />
+            </div>
+          </div>
+        </div>
+
+        <div class="profilerstellen__row">
+          <label> Favorit </label>
+          <select name="favorit">
+            <option value="salami">Salami</option>
+            <option value="schinken">Schinken</option>
+          </select>
+        </div>
+        <div class="profilerstellen__row">
+          <label>Spezielle Wünsche </label>
+          <textarea name="speziellewuensche"></textarea>
+        </div>
+        <div class="profilerstellen__row">
+          <label> E-Mail </label>
+          <input type="email" />
+        </div>
+        <div class="profilerstellen__row">
+          <button type="reset">Zurücksetzen</button>
+          <button type="submit">Speichern</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

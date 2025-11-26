@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benutzerprofil</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="profil-styles.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <h2>Menü</h2>
+      <ul>
+        <li><a href="uebersicht.html">Übersicht</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="#">Bestellungen</a></li>
+        <li><a href="#">Favoriten</a></li>
+        <li><a href="#">Einstellungen</a></li>
+      </ul>
+    </nav>
+
+    <div class="window-container">
+      <div class="window-controls">
+        <button class="window-btn minimize">−</button>
+        <button class="window-btn maximize">□</button>
+        <button class="window-btn close">×</button>
+      </div>
+
+      <main class="profil-container">
+        <h1>Benutzerprofil</h1>
+
+        <form id="profilForm" class="profil-form">
+          <div class="form-layout">
+            <div class="profil-bild-bereich">
+              <div class="profil-bild">
+                <svg class="profil-icon" viewBox="0 0 100 100">
+                  <circle cx="50" cy="35" r="20" fill="#999" />
+                  <path d="M 20 85 Q 20 60 50 60 Q 80 60 80 85" fill="#999" />
+                </svg>
+              </div>
+              <button type="button" class="foto-hochladen">
+                Foto hochladen
+              </button>
+            </div>
+
+            <div class="form-felder">
+              <div class="form-gruppe">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-gruppe">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" name="nachname" required />
+              </div>
+
+              <div class="form-gruppe form-gruppe--klein">
+                <label for="alter">Alter</label>
+                <input
+                  type="number"
+                  id="alter"
+                  name="alter"
+                  min="1"
+                  max="120"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-gruppe">
+            <label for="lieblingspizza">Lieblingspizza</label>
+            <input type="text" id="lieblingspizza" name="lieblingspizza" />
+          </div>
+
+          <div class="form-gruppe">
+            <label for="spezielle-wuensche">Spezielle Wünsche</label>
+            <textarea
+              id="spezielle-wuensche"
+              name="spezielle-wuensche"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="form-gruppe">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-aktionen">
+            <button type="reset" class="btn btn-zuruecksetzen">
+              Zurücksetzen
+            </button>
+            <button type="submit" class="btn btn-speichern">Speichern</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="profil-script.js"></script>
+  </body>
+</html>

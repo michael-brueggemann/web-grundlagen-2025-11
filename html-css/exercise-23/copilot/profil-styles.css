@@ -1,0 +1,236 @@
+/* Fenster-Styling */
+.window-container {
+  position: relative;
+  margin: 20px auto;
+  max-width: 900px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin-left: 60px;
+}
+
+.window-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.window-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  background: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-times-standard);
+}
+
+.window-btn:hover {
+  background: #e0e0e0;
+}
+
+.window-btn.close:hover {
+  background: #ff5f57;
+  color: white;
+}
+
+.window-btn.minimize:hover {
+  background: #ffbd2e;
+}
+
+.window-btn.maximize:hover {
+  background: #28c940;
+}
+
+/* Profil-Container */
+.profil-container {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.profil-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Formular-Layout */
+.profil-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-layout {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.profil-bild-bereich {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profil-bild {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.profil-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.foto-hochladen {
+  padding: 8px 16px;
+  background-color: var(--background-element);
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-family-standard);
+  transition: background-color var(--transition-times-standard);
+}
+
+.foto-hochladen:hover {
+  background-color: #d0d0d0;
+}
+
+.form-felder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form-Gruppen */
+.form-gruppe {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-gruppe--klein {
+  max-width: 150px;
+}
+
+.form-gruppe label {
+  font-weight: bold;
+  color: #333;
+  font-family: var(--font-family-standard);
+}
+
+.form-gruppe input,
+.form-gruppe textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--font-family-standard);
+  font-size: 14px;
+  transition: border-color var(--transition-times-standard);
+}
+
+.form-gruppe input:focus,
+.form-gruppe textarea:focus {
+  outline: none;
+  border-color: var(--background-element-first);
+}
+
+.form-gruppe textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Aktions-Buttons */
+.form-aktionen {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-family-standard);
+  font-size: 16px;
+  transition: transform var(--transition-times-standard),
+    box-shadow var(--transition-times-standard);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-zuruecksetzen {
+  background-color: var(--background-element);
+  color: #333;
+}
+
+.btn-zuruecksetzen:hover {
+  background-color: #d0d0d0;
+}
+
+.btn-speichern {
+  background-color: var(--background-element-first);
+  color: #333;
+  font-weight: bold;
+}
+
+.btn-speichern:hover {
+  background-color: var(--background-element-second);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .window-container {
+    margin-left: 0;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .form-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-felder {
+    width: 100%;
+  }
+
+  .form-gruppe--klein {
+    max-width: 100%;
+  }
+
+  .form-aktionen {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

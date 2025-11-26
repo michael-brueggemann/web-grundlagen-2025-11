@@ -1,0 +1,55 @@
+.pizzavorschau {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--background-main);
+}
+
+.pizzavorschau__element {
+  height: 200px;
+  width: 200px;
+  background-color: var(--background-element);
+  margin: 10px;
+  overflow: hidden;
+  font-family: var(--font-family-standard);
+}
+
+.pizzavorschau__element--special {
+  border: 5px solid green;
+  height: 190px;
+  width: 190px;
+}
+
+.pizzavorschau__element--special + .pizzavorschau__element {
+  transform: scale(0.5);
+}
+
+.pizzavorschau__element:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pizzavorschau__element:first-child {
+  background-color: var(--background-element-first);
+}
+
+.pizzavorschau__element:nth-child(2) {
+  background-color: var(--background-element-second);
+}
+
+img {
+  width: 200px;
+  height: 160px;
+}
+
+form,
+h1,
+p {
+  font-family: var(--font-family-standard);
+}
+
+.center {
+  margin: auto;
+  max-width: 600px;
+}

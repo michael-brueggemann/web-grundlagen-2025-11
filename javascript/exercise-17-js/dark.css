@@ -1,0 +1,7 @@
+.dark {
+  --font-family-standard: Consolas;
+  --background-main: rgb(170, 170, 170);
+  --background-element: gray;
+  --background-element-first: rgb(107, 91, 1);
+  --background-element-second: rgb(122, 70, 2);
+}
